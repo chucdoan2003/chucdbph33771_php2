@@ -8,7 +8,8 @@ class CartModel extends Database{
         return $this->getData($sql, true);
     }    
     public function getSpCart($id_user){
-        $sql="SELECT carts_detail.id, users.username, product.name, carts_detail.quantity, carts_detail.total
+        $sql="SELECT carts_detail.id,carts_detail.id_cart, users.username, product.name,product.id AS id_sp,
+         carts_detail.quantity, carts_detail.total
         FROM carts_detail JOIN product ON carts_detail.id_sp=product.id
         JOIN carts ON carts_detail.id_cart = carts.id 
         JOIN users ON carts.id_user =users.id where users.id=$id_user";

@@ -25,3 +25,7 @@ abstract class User{
     abstract function logout();
 
 }
+abstract class Invoice{
+    abstract function addInvoice();
+    
+}

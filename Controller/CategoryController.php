@@ -3,7 +3,7 @@
     require_once('Model/ProductModel.php');
     require_once('AbstractClass.php');
 
-    class CategoryController{
+    class CategoryController extends Category{
         public $data=[];
         public function listCategory(){
             $category = new CategoryModel();

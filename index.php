@@ -3,10 +3,12 @@
     require_once('Controller/CategoryController.php');
     require_once('Controller/UserController.php');
     require_once('Controller/CartController.php');
+    require_once('Controller/InvoiceController.php');
     $productController = new ProductController();
     $categoryController = new CategoryController();
     $userController = new UserController();
     $cartController = new CartController();
+    $invoiceController = new InvoiceController();
     session_start();
 
     $url = $_GET['url'] ?? '/';
@@ -52,7 +54,7 @@
         case 'add-cart':
             $cartController->addCart();
             break;
-            //user
+           
         case 'list-cart':
             $view= $cartController->listSpCart();
             if(is_array($view)){extract($view);}
@@ -60,6 +62,22 @@
         case 'delete-cart':
             $cartController->deleteSpCart();
             break;
+        //invoice
+        case 'list-invoice':
+            $view= $invoiceController->getInvoice();
+            if(is_array($view)){extract($view);}
+            break;
+        case 'add-invoice':
+            $view=$invoiceController->addInvoice();
+            if(is_array($view)){extract($view);}
+            break;
+        case 'cancel-invoice':
+            $invoiceController->changeInvoice(4);
+            break;
+        case 'datlai-invoice':
+            $invoiceController->changeInvoice(0); 
+            break;
+             //user
         case 'login':
             $login=true;
             $view=$userController->login();

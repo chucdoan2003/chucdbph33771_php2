@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
+    <h3>List Category</h3>
     <button class="btn btn-success"><a href="index.php?url=add-category">Add category</a></button>
     <table border=1 class="table">
         <thead>
@@ -44,6 +35,3 @@
         <?php endforeach; ?>
 
     </table>
-</body>
-
-</html>

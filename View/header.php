@@ -34,8 +34,13 @@
                     <li><a href="?url=list-category">
                             Category</a>
                     </li>
-                    <li><a href="?url=list-cart">
+                    <li>
+                        <a href="?url=list-cart">
                             Cart</a>
+                    </li>
+                    <li>
+                        <a href="?url=list-invoice">
+                            Bill</a>
                     </li>
 
 
