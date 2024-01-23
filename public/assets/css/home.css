@@ -1,0 +1,378 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: 0 auto;
+    width: 1440px;
+    
+}
+header{
+    height: 80px;
+    /* background-color: aquamarine; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+
+}
+header ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 15px 5px 0 5px;
+    
+}
+.search_login{
+    display:flex;
+}
+a{
+    text-decoration: none;
+    text-transform: none;
+    color: #000;
+}
+header a{
+    text-decoration: none;
+    text-transform: none;
+    color: #000;
+}
+header .login{
+    margin: 0 20px;
+}
+header .search_input{
+    outline: none;
+    font-size: 20px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    margin: -5px 10px 0 0 
+}
+.mainContent{
+    height: 200px;
+}
+footer{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 20px;
+    font-size: 20px;
+    box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.4);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.4);
+}
+footer h3{
+    margin: 0 0 10px 0;
+    font-size: 24px;
+}
+footer .fa-brands{
+    margin: 20px 10px;
+    font-size: 30px;
+}
+footer .fa-youtube{
+    color: red;
+}
+footer .fa-tiktok{
+    color: #000;
+}
+footer .fa-facebook{
+    color: rgb(0, 183, 255);
+}
+footer .fa-square-instagram{
+    color: rgb(247, 137, 28);
+}
+footer p{
+    cursor: pointer;
+}
+/* Login  */
+.bgImg{
+    margin: 0;
+    padding: 0;
+    background-size: cover; /* Chọn kích thước ảnh nền để che đủ màn hình */
+    /* background-position: center;
+    background-repeat: no-repeat; */
+    /* height: 100vh; 100% chiều cao của viewport */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrap_login{
+    height: 70%;
+    width: 70%;
+    border-radius: 20px;
+    background-color: rgb(29, 235, 201, 0.7);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+    display:flex;
+
+}
+.wrap_login .img_decor{
+    width: 50%;
+    height: 100%;
+}
+.wrap_login .img_decor img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+}
+.form_login{
+    width: 50%;
+    height: 100%;
+}
+.wrap_login .form_login .wrap__form-login{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.wrap_login h1{
+    transform: translateY(-20px);
+}
+.wrap_login .form-group{
+    margin: 10px 0;
+
+}
+.wrap_login .input__login{
+    width: 100%;
+    padding: 5px 30px;
+    background-color:#16b7b19e ;
+    border:none;
+    outline: none;
+    border-bottom: 2px solid rgb(17, 185, 28);
+    font-size: 20px;
+
+}
+.wrap_login .fa-user,.fa-lock,.fa-envelope{
+    position: relative;
+    top: -25px;
+    left: 8px;
+}
+.wrap_login .btn-login,.btn-register{
+    margin-top:10px;
+    width: 100%;
+    height: 30px;
+    cursor:pointer;
+    border:none;
+    outline: none;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrap_login .btn-login{
+    background-color: #37e829b8;
+    
+}
+.wrap_login .btn-register{background-color:#00a6ff;}
+/* .wrap_login .forgotPass{margin:5px 0 5px 5px} */
+/* .wrap_login .checkRemember{margin: 0 0 0 5px} */
+.wrap_login .check__forgot{
+    display:flex;
+    justify-content: space-between;
+    margin: 0 0 10px 0;
+}
+.wrap_login .valid{
+    color: red;
+    width: 100%;
+    height: 20px;
+}
+/* main content */
+.main__content-home{
+    background-color: #F5F6F7;
+}
+/* Home */
+.home{
+    display:flex;
+}
+/* home aside */
+.home__aside{
+    width: 20%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+}
+.home__aside .home__aside-title{
+    padding: 10px;
+}
+.home__aside div{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    border-left: 1px solid rgba(0, 0, 0, 0.4);
+    padding: 10px;
+}
+.home__aside .home__aside-item:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+
+}
+.home__aside a{
+    text-decoration: none;
+    text-transform: none;
+    color: #000;
+    display:inline-block;
+    width:100%;
+}
+
+/* home_main */
+.home__main{
+    width:75%;
+    margin-left: 20px;
+
+}
+.home .home__course{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.home .course__item a{
+    text-decoration: none;
+    text-transform: none;
+    color: #000;
+}
+.home .course__item{
+    width: 30%;
+    display:flex;
+    flex-direction: column;
+    margin: 10px 0;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+}
+.home .course__item img{
+    width: 100%;
+}
+.course__item-content{
+    padding: 10px 20px;
+    display:flex;
+    flex-direction: column;
+}
+.home .course__btn{
+    margin: 10px 0;
+}
+.home__main h3{
+    text-align: center;
+    margin-top:10px;
+}
+/* Chi tiết khóa học */
+.main__content-detail{
+    width: 100%;
+}
+.detail__course{
+    padding: 20px 100px;
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+}
+/* detail main */
+.detail__course-main{
+    width: 65%;
+
+}
+/* detail aside */
+.detail__course-aside{
+    width: 30%;
+    
+}
+.detail__course-aside img{
+    width:100%;
+}
+.aside__head{
+    text-align: center;
+}
+.detail__course-price{
+    color: red;
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+.detail__btn-register{
+    font-size: 24px;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    background-color:rgb(98, 244, 98);
+    border-radius: 10px;
+    transition: .5s;
+    margin:0 0 10px 0;
+
+}
+.detail__btn-register:hover{
+    background-color: green;
+    color:#F5F6F7;
+}
+/* Đánh giá */
+.fa-star{
+    color:#dcdc15d1;
+}
+.fa_white{
+    color:rgba(0, 0, 0, 0.2)
+}
+.rating{
+    font-size: 24px;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    background-color:rgb(77 187 233);
+    border-radius: 10px;
+    transition: .5s;
+    margin:10px 0 10px 0;
+
+}
+.detail__aside-rating{
+    margin-top: 30px;
+}
+.rating:hover{
+    background-color: rgb(55, 49, 237);
+    color:#F5F6F7;
+}
+/* Chi tiết syllabus */
+.detail__syllabus-title{
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    margin: 10px 20px;
+    padding: 10px 20px;
+}
+.detail__syllabus-title:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    color: #fff;
+}
+.line{
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 1px;
+    margin-bottom: 10px;
+}
+.detail__head,.detail__benifit,.detail__syllabus,.detail__comment{
+    padding: 0 10px;
+}
+/* Chi tiết bình luận */
+.detail__comment-item{
+    display:flex;
+    margin: 10px 0;
+}
+.detail__comment-avt{
+    font-size: 50px;
+    margin: 0 10px 0 0;
+
+}
+.detail__comment-item-content-parent{
+    background-color:#EFF1F3 ;
+    flex:1;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.detail__comment-item-user{
+    color:#006eff;
+    margin:0 0 10px 0;
+}
+.detail__add_cmt{
+    border:none;
+    outline: none;
+    padding: 5px 15px 5px;
+    background-color: rgb(74, 226, 74);
+    border-radius: 10px;
+}
+.tb{
+    margin: 10px 0;
+}
+
+
+
+
