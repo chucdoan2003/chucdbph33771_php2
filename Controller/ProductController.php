@@ -1,12 +1,13 @@
 <?php 
     require_once('Model/ProductModel.php');
     require_once('Model/CategoryModel.php');
+    require_once('AbstractClass.php');
+
     
-    class ProductController{
+    class ProductController extends Product{
         public $data=[];
         function listProduct(){
             $product = new ProductModel();
-            
             $this->data['products']=$product->getProduct();
             $this->data['view']='view/product/list.php';
             return $this->data;
@@ -49,9 +50,7 @@
                 header('location:index.php?url=list-product');
             }else{
                 return $this->data;
-            }
-            
-            
+            }    
         }
         function deleteProduct(){
             if(isset($_GET['id'])){

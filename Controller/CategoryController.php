@@ -1,6 +1,8 @@
 <?php
     require_once('Model/CategoryModel.php');
     require_once('Model/ProductModel.php');
+    require_once('AbstractClass.php');
+
     class CategoryController{
         public $data=[];
         public function listCategory(){

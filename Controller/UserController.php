@@ -1,6 +1,8 @@
 <?php
 require_once('Model/UserModel.php');
-    class UserController{
+require_once('AbstractClass.php');
+
+    class UserController extends User{
         public $model, $data;
         public function __construct(){
             $this->model= new UserModel();

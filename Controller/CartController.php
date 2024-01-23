@@ -1,8 +1,9 @@
 <?php
 require_once('Model/CartModel.php');
 require_once('Model/ProductModel.php');
+require_once('AbstractClass.php');
 
-class CartController{
+class CartController extends Cart{
     public $data=[], $productModel, $cartModel;
     public function __construct(){
         $this->productModel= new ProductModel();
